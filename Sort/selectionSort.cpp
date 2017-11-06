@@ -1,8 +1,8 @@
 #include <iostream> 
-#include <cstdio> // ALDS1_2_B
+#include <cstdio>
 using namespace std;
 
-// Selection Sort Algorithm
+// Selection Sort Algorithm (ALDS1_2_B)
 int selectionSort(int A[], int N) {
   int i, j, t, sw = 0, minj;
   for ( i = 0; i < N - 1; i++ ) {
