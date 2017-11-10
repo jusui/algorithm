@@ -27,6 +27,10 @@ int main() {
   cout << S.top() << " "; // 5
   S.pop();
 
+  cout << S.top() << " ";
+  if( S.empty() )
+    cout << "Stack is empty !" << " ";
+
   cout << S.top() << endl;
 
   return 0;
