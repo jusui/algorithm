@@ -1,6 +1,7 @@
 #include <cstdio>
 #include <cstring>
-#define LEN 100005
+// #define LEN 100005
+const int LEN = 1000005;
 using namespace std;
 
 // struct : process
