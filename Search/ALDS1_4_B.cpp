@@ -21,7 +21,8 @@ int main() {
       sum++;
   }
 
-  cout << "sum = " << sum << endl;
+  //  cout << "sum = " << sum << endl;
+  scanf("%d\n", sum);
 
   return 0;
 }
