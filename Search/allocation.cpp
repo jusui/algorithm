@@ -29,7 +29,7 @@ int solve() {
   llong mid;
   while( right - left > 1) {
     mid = (left + right) / 2;
-    int v = check(mid); // check # of n with mid == P deicision
+    int v = check(mid); // check # of n with mid == P decision
     if ( v >= n ) right = mid;
     else left = mid;
   }
