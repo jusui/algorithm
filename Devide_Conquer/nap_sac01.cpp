@@ -28,12 +28,19 @@ int rec(int i, int j) {
 }
 
 
-void solve() {
-  cout << rec( 0, W ) << endl;
+// void solve() {
+//   cout << rec( 0, W ) << endl;
 
-}
+// }
 
-int main() {
-  solve();
+// int main() {
+//   solve();
+
+//   return 0;
+// }
+
+int main(void) {
+  cout << rec(0, W) << endl;
+  
   return 0;
 }
