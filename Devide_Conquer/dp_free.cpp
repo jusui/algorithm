@@ -12,6 +12,7 @@ int main(void) {
     result[i] = data[i] * data[i];
  }
   for ( i = 0; i < DATA_SIZE; i++ ) {
+    // Max = 5 indices.(11.000000 -> 11.00)
     printf("%5.2f\n", result[i]);
   }
 
