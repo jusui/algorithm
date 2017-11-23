@@ -1,10 +1,9 @@
-#include <iostream>
 #include <cstdio>
 using namespace std;
 
 int i, A[50];
 
-int solve(int i, int m) {
+int solve(int i, int m) { // m : num1 + num2
   // Regression function
   if ( m == 0 ) return 0;
   if ( i >= m ) return 1;
@@ -23,8 +22,10 @@ int main() {
   scanf("%d", &q);
   for ( int i = 0; i < q; i++ ) {
     scanf("%d", &M);
-    if ( solve(0, M) )
+    if ( solve(0, M) ) {
+      //      printf("%d", solve(0, M));
       printf("yes\n");
+    }
     else printf("no\n");
   }
 
