@@ -27,6 +27,11 @@ int rec(int i, int j) {
   
 }
 
+int main(void) {
+  cout << rec(0, W) << endl;
+  
+  return 0;
+}
 
 // void solve() {
 //   cout << rec( 0, W ) << endl;
@@ -39,8 +44,3 @@ int rec(int i, int j) {
 //   return 0;
 // }
 
-int main(void) {
-  cout << rec(0, W) << endl;
-  
-  return 0;
-}
