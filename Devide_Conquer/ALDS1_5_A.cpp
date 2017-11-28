@@ -6,7 +6,7 @@ int n, A[20];
 
 // if A[i] makes m -> true, else false.
 int solve(int i, int m) {
-  if ( m == 0 ) return 1;
+  if ( m == 0 ) return 1; // Sum made
   if ( i >= n ) return 0;
   int res = solve( i + 1, m ) || solve( i + 1, m - A[i] );
 
