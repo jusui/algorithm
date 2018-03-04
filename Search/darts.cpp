@@ -13,10 +13,14 @@ int main(void) {
     vector<int> p(n);
     rep(i, n) cin >> p[i];
     p.push_back(0); // 矢を使わない場合
+    sort(p.begin(), p.end());
     int ans = 0;
-    // 計算量(n^4)
-    rep(i, n + 1) rep(j, n + 1) rep(k, n + 1) rep(l, n + 1) {
-      int tmp = p[i] + p[j] + p[k] + p[l];
+    // 計算量(n^3 * log(n))
+    rep(i, n + 1) rep(j, n + 1) rep(k, n + 1) {
+      int tmp = p[i] + p[j] + p[k];
+      int aim = m - tmp;
+      if ( aim < 0 ) continue;
+      tmp += *(upper_bound(p.begin(), p.end(), aim) - 1);
       if (tmp <= m) ans = max(ans, tmp);
     }
     printf("%d\n", ans);
