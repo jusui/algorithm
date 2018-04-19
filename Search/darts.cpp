@@ -10,10 +10,10 @@ using namespace std;
 
 int main(void) {
   while(1) {
-    int n, m; cin >> n >> m;
+    int n, m; cin >> n >> m; // n:# of throw, m:Max value 
     if ( n == 0 && m == 0 ) return 0;
     vector<int> p(n);
-    rep(i, n) cin >> p[i];
+    rep(i, n) cin >> p[i]; // dart points
     p.push_back(0); // 矢を使わない場合
     vector<int> pp((n + 1) * (n + 1));
     int cnt = 0;
@@ -24,7 +24,7 @@ int main(void) {
     
     sort(pp.begin(), pp.end());
     int ans = 0;
-    // 計算量(n^3 * log(n))
+    // 計算量(n^2 * log(n))
     rep(i, (n + 1) * (n + 1)) {
       int tmp = pp[i];
       int aim = m - tmp;
@@ -36,4 +36,3 @@ int main(void) {
   }
   return 0;
 }
-
