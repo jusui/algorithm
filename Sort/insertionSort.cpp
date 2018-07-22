@@ -1,7 +1,7 @@
 #include<iostream>
-
 using namespace std;
 
+/* 配列の要素を順番に出力 */
 void trace( int A[], int N) {
   int i;
   for ( i = 0; i < N; i++) {
@@ -11,6 +11,7 @@ void trace( int A[], int N) {
   printf("\n");
 }
 
+/* 挿入ソート(0 origin array) */
 void insertionSort(int A[], int N) {
   int j, i, v;
   for ( i = 0; i < N; i++) {
