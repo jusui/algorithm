@@ -2,9 +2,9 @@
 using namespace std;
 
 /* 配列の要素を順番に出力 */
-void trace(int A[], int N) {
+void trace( int A[], int N) {
   int i;
-  for ( i = 0; i < N; i++ ) {
+  for ( i = 0; i < N; i++) {
     if ( i > 0 ) cout << " " << endl;
     printf("%d", A[i]);
   }
@@ -14,10 +14,10 @@ void trace(int A[], int N) {
 /* 挿入ソート(0 origin array) */
 void insertionSort(int A[], int N) {
   int j, i, v;
-  for ( i = 0; i < N; i++ ) {
+  for ( i = 0; i < N; i++) {
     v = A[i];
     j = i - 1;
-    while( j >= 0 && A[j] > v ) {
+    while( j >= 0 && A[j] > v) {
       A[j + 1] = A[j];
       j--;
     }
